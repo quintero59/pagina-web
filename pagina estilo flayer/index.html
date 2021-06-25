@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Jelly B</title>
+</head>
+<body>
+    <header class="contenido-encabezado" id="contenido-encabezado">
+        <div class="texto-encabezado">
+            <p class="icono">
+                <i class="fas fa-glass-cheers"></i>
+            </p>
+            <h1 class="titulo">
+                JElly B <br>
+                <h1 class="titulo1">
+                    ¡Visitanos!<br>BAR & GRILL<br>
+                </h1>
+                <span class="titulo-naranja-neon texto-regular">hasta 30% de descuentos en bebidas a la mejor mesa </span>
+            </h1>
+            <P class="descripcion">
+                NUEVO BAR & GRILL<br>
+                Por apertura habra descuentos<br>
+            </P>
+            <a href="file:///C:/Users/Quintero%20ED/Documents/nuevo%20proyecto/index.html" class="btn-link texto-regular">Mas información</a>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor">
+            <h2 class="subtitulo-h2">
+                "INFORMACION"
+            </h2>
+            <p>
+                <span class="letra">N</span> uestro bar cuenta con el mejor ambiente para entretenerce 
+            </p>
+            <p>
+                buen ambiente, buena musica.
+            </p>
+            <p>
+                todas las noches se rifara una botella a la mejor mesa.
+            </p>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/a11e9492c8.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+			const header = document.getElementById('contenido-encabezado');
+			header.style.opacity = '1' - window.pageYOffset / 300;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Light 300', sans-serif;
+    font-size: 20px;
+    background-color: black;
+}
+p{
+    margin-bottom: 30px;
+}
+.texto-regular{
+    font-weight: 400;
+}
+.contenido-encabezado{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index:0 ;
+
+
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 100px 150px rgba(0, 0, 0, .6);
+}
+.texto-encabezado {
+    color: #fff
+}
+.texto-encabezado .icono {
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+.texto-encabezado .titulo1 {
+    font-weight: 700;
+    font-size: 40px;
+    animation: verde-ani 1s infinite alternate;
+    margin-top: 20px;
+
+}
+.texto-encabezado .titulo-naranja-neon,
+.texto-encabezado .icono {
+    margin-bottom: 0;
+    font-size: 30px;
+    animation: naranja-neon 3s infinite alternate;
+}
+.texto-encabezado, .descripcion {
+    margin-top: 40px;
+    font-size: 20px;
+}
+.descripcion::firt-line{
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+}
+.btn-link{
+    display: inline-block;
+    padding: 15px 38px;
+    border: 6px dotted green;
+    border-radius: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 4px #fff, 7px 2px 10px #ff0, ;
+
+}
+.btn-link:hober{
+    text-shadow: none;
+    border: 6px dotted rgb(255,255,255.8);
+
+}
+main{
+    color: #fff;
+    width: 100%;
+    min-width: 100vh;
+    z-index: 100;
+    position: relative;
+    margin-top: 100vh;
+    display: flex;
+}
+main .contenedor{
+    padding: 50px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+
+
+}
+main .subtitulo-h2{
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 50px;
+    text-align: center;
+
+}
+main .letra{
+    font-size: 55px;
+    margin-right: 10pz;
+    line-height: 15px;
+    font-family: serif;
+}
+main .subtitulo-h2, main .letra{
+    text-shadow: 0 0 15px rgb(255, 255, 255,.5), 0  0 10px rgb(255, 255, 255, .5)
+}
+@keyframes azul-neon {
+    0%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100%{
+        text-shadow: 2px 4px 22px blue, 2px 4px 10px #fff, -3px -3px 22px green, -2px -3px 27px yellow;
+    }
+    10%{
+        text-shadow: none;
+    }
+}
+@keyframes naranja-neon {
+    0%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100%{
+        text-shadow: 9px 9px 18px green, 4px 4px 10px, -3px -3px 10px red, -9px -9px 25px yellow;
+    }
+    10%{
+        text-shadow: none;
+    }
+}
+@keyframes verde-ani {
+    0%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100%{
+        text-shadow: 2px 4px 22px rgb(167, 167, 207), 2px 4px 10px rgb(187, 29, 29), -3px -3px 22px rgb(60, 177, 60), -2px -3px 27px yellow;
+    }
+    10%{
+        text-shadow: none;
+    }
+}
+.titulo, .btn-link{
+        animation: flicker 1.5s infinite alternate;
+        color: #fff;
+      }
+      
+      h1 {
+        font-size: 4.2rem;    
+        margin: 0%;
+        padding: auto;
+    
+    
+      }
+      
+      /* Flickering animation */
+      @keyframes flicker {
+          
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      
+            text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #0fa,
+            0 0 80px #0fa,
+            0 0 90px #0fa,
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+        
+        }
+        
+        20%, 24%, 55% {        
+            text-shadow: none;
+        }    
+      }
+      
+      
+      /* Additional styling */
+        
+      h2 {
+       font-size: 1.8rem;
+      }
+      .container {
+        margin-top: 20vh;
+      }
+}
